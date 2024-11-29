@@ -1,97 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VENDORA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.0/css/line.css">
-    <link rel="stylesheet" href="vendora.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="vendora.css" />
+  </head>
+  <body>
     <div class="head">
-        <nav>
-            <p class="logo"><span>V</span>ENDORA</p>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Products</a></li>
-            </ul>
-        <button type="button">Sign In</button>
-        </nav>
+      <nav>
+        <p class="logo"><span>V</span>ENDORA</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+        <button class="button" id="form_open">Login</button>
+      </nav>
     </div>
     <div class="imagecontainer">
-        <img src="meDusa.png" alt="medusa" class="medusa">
-        <h1 class="text-overlay">VENDORA</h1>
-        
+      <img src="meDusa.png" alt="medusa" class="medusa" />
+      <h1 class="text-overlay">VENDORA</h1>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <section class="Home"></section>
-        <div class="form_container">
-            <i class="uil uil-times form_close"></i>
-            <div class="login_form">
-                <form action="#">
-                   <h2>login</h2>
-                   <div class="input_box">
-                        <input type="email" placeholder="Enter your email" required/>
-                        <i class="uil uil-envelope-alt"></i>
-                   </div>
-                   <div class="input_box">
-                        <input type="email" placeholder="Enter your password" required/>
-                        <i class="uil uil-lock password"></i> <!-- the first thing to ask -->
-                        <i class="uil uil-eye-lash pw_hide"></i>
-                    </div>
-                    <div class="option_field">
-                        <span class="checkbox">
-                            <input type="checkbox" id="check">
-                            <label for="check">remember me</label>
-                        </span>
-                        <a href="#" class="forgot_pw">Forgot password?</a>
-                    </div>
-                </form>
+
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- login_form -->
+        <div class="login_form">
+          <form action="#">
+            <h2>login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email"/>
+              <i class="uil uil-envelope-alt"></i>
             </div>
+            <div class="input_box">
+              <div class="password">
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw-hide" id="login_eye"></i>
+              </div>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">forgot password?</a>
+            </div>
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">
+              don't have an account? <a href="#" id="signup">Signup</a>
+            </div>
+          </form>
         </div>
+        <!-- signup_form -->
+        <div class="signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" />
+              <i class="uil uil-envelope-alt"></i>
+            </div>
+            <div class="input_box">
+              <div class="password">
+                <input type="password" placeholder="Create password" />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw-hide" id="signup_eye"></i>
+              </div>
+            </div>
+
+            <div class="input_box">
+              <div class="password">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  required
+                />
+                <i class="uil uil-lock password">
+                <i class="uil uil-eye-slash pw-hide" id="signup_eye"></i>
+              </div>
+            </div>
+
+            <button class="button">Signup Now</button>
+
+            <div class="login_signup">
+              Already have an account? <a href="#" id="login">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+<section class="products">
+        <div class="products-header">
+            <h3>Découvrez nos statues uniques</h3>
+            <p>Des pièces rares pour enrichir votre espace intérieur.</p>
+            <a href="catalogue.html" class="button">Voir le catalogue</a>
+        </div>
+        <div class="products-container">
+        <!-- Product Card 1 -->
+        <div class="wrapper">
+            <h3>Winged Victory of Samothrace</h3>
+            <img src="beheadedangel.jpg" alt="beheaded angel">
+            <p class="product-description">
+                The Winged Victory of Samothrace, or the Niké of Samothrace, is a votive monument originally discovered on the island of Samothrace, north of the Aegean Sea. It is a masterpiece of Greek sculpture from the Hellenistic era, dating from the beginning of the 2nd century BC.
+            </p>
+            <p class="product-price">Prix :1200000DH</p>
+            <button class="buy-button">Acheter maintenant</button>
+        </div>
+        
+        <!-- Product Card 2 -->
+        <div class="wrapper">
+            <h3>LA VIERGE VOILEE</h3>
+            <img src="ziff.png" alt="Venus de Milo statue">
+            <p class="product-description">
+             La Vierge voilée est un buste en marbre de Carrare sculpté à Rome par le sculpteur italien Giovanni Strazza au milieu du XIXe siècle. Il s'agit d'une représentation de la Vierge Marie qui véhicule une ambivalence entre sérénité et sensualité1
+            </p>
+            <p class="product-price">Prix :1200000DH</p>
+            <button class="buy-button">Acheter maintenant</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="wrapper">
+            <h3>STATUE GUARDIAN ANGEL</h3>
+            <img src="angel.jpg" alt="STATUE GUARDIAN ANGEL">
+            <p class="product-description">
+            Guardian Angel as a symbol of human security (fragment of statue)
+            </p>
+            <p class="product-price">Prix :1200000DH</p>
+            <button class="buy-button">Acheter maintenant</button>
+        </div>
+    </section>
+    <div class="form_total">
+      <form id="commande">
+          <h4>COMMANDER MAINTENANT</h4>
+          <hr>
+          
+          <label for="nom">Nom et prénom</label><br>
+          <input type="text" id="nom" name="nom" placeholder="Entrer votre nom et prénom"><br><br>
+          
+          <label for="adresse">Adresse</label><br>
+          <input type="text" id="adresse" name="adresse" placeholder="Entrer votre adresse"><br><br>
+          
+          <label for="adresse">Code postal</label><br>
+          <input type="tel" id="numero" name="adresse" placeholder="Ex : 75000"><br><br>
+          
+          <label for="numero">Numéro de téléphone</label><br>
+          <input type="tel" id="numero" name="numero" pattern="[0-9]{10}" placeholder="Ex : 0612345678"><br><br>
+          
+          <label for="quantity">Quantité désirée</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" placeholder="Ex : 1"><br><br>
+          
+          <div class="calculTotal">
+              <label for="total">Total de la commande (en Dh)</label><br>
+              <output id="total" name="total"></output><br><br>
+          </div>
+          
+          <button type="button" id="validcommande">Valider la commande</button><br>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-about">
+              <h4>About Us</h4>
+              <p>
+                  We provide unique and rare statues to enhance your interior space. 
+                  Discover our collection of timeless masterpieces.
+                  <h5>join in and get 50%off!</h5>
+              </p>
+          </div>
+          <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="catalogue.html">Catalogue</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: vendora@example.com</p>
+              <p>Phone: +212 655 222 222</p>
+              <p>Address: 123, ABDELMOUMEN, Casablanca, Morocco</p>
+          </div>
+          <div class="social-contact">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024.designed by merylin.</p>
+      </div>
+  </footer>
+    <script src="vendora.js"></script>
 </body>
 </html>
